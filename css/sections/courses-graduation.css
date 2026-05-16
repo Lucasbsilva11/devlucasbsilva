@@ -1,0 +1,250 @@
+.education {
+  background-color: var(--bg);
+}
+
+/* layout */
+
+.education-wrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================
+   LEFT SIDE
+========================================================== */
+
+.education-degree {
+  flex: 1;
+  min-width: 280px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+/* ==========================================================
+   RIGHT SIDE
+========================================================== */
+
+.education-courses {
+  flex: 1.3;
+  min-width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-courses a{
+  align-self: center
+}
+
+.courses-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+
+
+/* ==========================================================
+   TYPOGRAPHY
+========================================================== */
+
+.section-label {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.section-heading {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.section-description {
+  color: var(--gray);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.degree-card,
+.course-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 24px;
+
+  transition: 0.3s ease;
+}
+
+.degree-card:hover,
+.course-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(126, 184, 247, 0.25);
+}
+
+/* degree */
+
+.degree-card {
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.degree-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--primary);
+}
+
+.degree-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================
+   COURSES
+========================================================== */
+
+.courses-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  max-height: 500px;
+  overflow-y: auto;
+
+  padding-right: 0.5rem;
+}
+
+.course-card {
+  padding: 1.2rem 1.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  flex-wrap: wrap;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  flex: 1;
+  min-width: 200px;
+}
+
+.course-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.8rem;
+}
+
+.course-meta .course-dowload {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* ==========================================================
+   STATUS BADGES
+========================================================== */
+
+.status-badge {
+  padding: 0.45rem 0.9rem;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.status-badge.completed {
+  color: #8fffc8;
+  background: rgba(0, 255, 140, 0.08);
+}
+
+.status-badge.studying {
+  color: #7ad7ff;
+  background: rgba(0, 140, 255, 0.08);
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+.courses-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.courses-list::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 999px;
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 768px) {
+  .education-wrapper {
+    flex-direction: column;
+  }
+
+  .education-degree,
+  .education-courses {
+    width: 100%;
+  }
+
+  .course-meta {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-section {
+    padding: 120px 0 70px;
+  }
+
+  .degree-card,
+  .course-card {
+    padding: 1.2rem;
+  }
+
+  .course-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

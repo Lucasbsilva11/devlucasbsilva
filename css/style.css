@@ -1,0 +1,18 @@
+@import "global/resets-variables.css";
+@import "global/utility.css";
+
+/* Header and Footer */
+@import "global/header.css";
+@import "global/footer.css";
+
+/* Sections */
+@import "sections/hero.css";
+@import "sections/logos.css";
+@import "sections/about.css";
+@import "sections/process.css";
+@import "sections/courses-graduation.css";
+@import "sections/projects.css";
+
+
+/* Responsive */
+@import "responsive/responsive.css";

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Lucas B Silva</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header role="banner">
+        <div class="header-inner">
+
+            <a href="#" class="logo" aria-label="Lucas B Silva - Engenheiro de Software, ir para o início">
+                Lucas B<span aria-hidden="true">—</span>Software Engineer
+            </a>
+
+            <input type="checkbox" id="menu-toggle" aria-label="Abrir menu de navegação">
+
+            <label for="menu-toggle" class="menu-btn" aria-controls="main-nav" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </label>
+
+            <nav id="main-nav" aria-label="Navegação principal">
+                <a class="nav-link" href="#">Início</a>
+                <a class="nav-link" href="#sobre">Sobre</a>
+                <a class="nav-link" href="#educacao">Formação</a>
+
+                <div class="nav-dropdown" role="navigation" aria-label="Menu de navegação adicional">
+                    <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">Ver Mais</a>
+                    <div class="dropdown-menu" role="menu">
+                        <a class="nav-link" href="projects-studies.html" role="menuitem">Projetos</a>
+                        <a href="#" role="menuitem">E-mail</a>
+                        <a href="https://www.linkedin.com/in/lucas-lbs-dev/" target="_blank" role="menuitem">Linkedin</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero section" id="hero" aria-label="Apresentação">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Me chamo<br>
+                        <span class="accent">Lucas.</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Atualmente, sou estudante de programação e estou em processo de transição de carreira para a <strong>área de tecnologia,</strong> com foco em <strong>desenvolvimento de software.</strong>
+                    </p>
+                    <div class="hero-actions">
+                        <a href="https://github.com/Lucasbsilva11" class="btn btn-primary" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil do GitHub de Lucas (abre em nova aba)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 432 416" aria-hidden="true" focusable="false">
+                                <path fill="currentColor" d="M213.5 0q88.5 0 151 62.5T427 213q0 70-41 125.5T281 416q-14 2-14-11v-58q0-27-15-40q44-5 70.5-27t26.5-77q0-34-22-58q11-26-2-57q-18-5-58 22q-26-7-54-7t-53 7q-18-12-32.5-17.5T107 88h-6q-12 31-2 57q-22 24-22 58q0 55 27 77t70 27q-11 10-13 29q-42 18-62-18q-12-20-33-22q-2 0-4.5.5t-5 3.5t8.5 9q14 7 23 31q1 2 2 4.5t6.5 9.5t13 10.5T130 371t30-2v36q0 13-14 11q-64-22-105-77.5T0 213q0-88 62.5-150.5T213.5 0z" />
+                            </svg>
+                            Github
+                        </a>
+                        <!-- <a href="#" class="btn btn-outline" aria-label="Ver projetos SaaS">SaaS</a> -->
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="hero-image-wrap">
+                        <img src="imgs/perfil.png" alt="Foto de perfil de Lucas B Silva">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="logos-strip" aria-label="Tecnologias utilizadas">
+        <div class="container container-logos">
+            <p class="logos-label" id="logos-desc">Stack de tecnologias que utilizo na construção de projetos digitais.</p>
+            <ul class="logos-row" aria-labelledby="logos-desc" role="list">
+
+                <li class="logo-item" role="listitem">
+                    <div class="logo-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" focusable="false">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <rect width="16.5" height="16.5" x="3.75" y="3.75" rx="2" />
+                                <path d="M11.5 11.25v5a1 1 0 0 1-1 1H9m8.25-6h-2a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2" />
+                            </g>
+                        </svg>
+                    </div>
+                    Javascript
+                </li>
+
+                <li class="logo-item" role="listitem">
+                    <div class="logo-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 32 32" focusable="false">
+                            <path fill="currentColor" d="M15.994 3c-.365 0-.73.09-1.045.27L5.04 8.99C4.4 9.36 4 10.06 4 10.8v10.38c0 .75.4 1.44 1.04 1.81l2.6 1.5c1.26.62 1.71.62 2.28.62c1.87 0 2.94-1.13 2.94-3.09V11.31a.29.29 0 0 0-.29-.29h-1.25a.286.286 0 0 0-.29.29v10.7c0 .88-.91 1.74-2.38 1.01l-2.72-1.57a.303.303 0 0 1-.16-.27V10.81c0-.12.06-.22.16-.28l9.91-5.72a.29.29 0 0 1 .31 0l9.91 5.72c.1.06.16.16.16.27v10.38c0 .11-.06.22-.15.27l-9.92 5.73a.34.34 0 0 1-.31 0l-2.55-1.51a.23.23 0 0 0-.24-.02c-.71.4-.84.45-1.5.68c-.16.05-.41.15.09.43l3.31 1.96c.32.18.68.28 1.04.28c.37 0 .73-.1 1.05-.28l9.92-5.73c.64-.37 1.04-1.06 1.04-1.81V10.81c0-.75-.4-1.44-1.04-1.81l-9.92-5.73c-.316-.18-.68-.27-1.046-.27zm2.666 8.006c-2.83 0-4.52 1.2-4.52 3.2c0 2.17 1.68 2.768 4.4 3.038c3.25.32 3.5.802 3.5 1.442c0 1.1-.89 1.57-2.98 1.57c-2.63 0-3.21-.661-3.4-1.961a.28.28 0 0 0-.28-.24h-1.29a.28.28 0 0 0-.28.28c0 1.67.91 3.66 5.25 3.66c3.14 0 4.94-1.24 4.94-3.4c0-2.14-1.45-2.71-4.49-3.12c-3.09-.4-3.4-.61-3.4-1.33c0-.6.27-1.39 2.55-1.39c2.03 0 2.79.44 3.1 1.81c.03.13.14.23.28.23h1.29c.08 0 .15-.04.21-.1a.27.27 0 0 0 .07-.22c-.2-2.36-1.77-3.47-4.95-3.47z" />
+                        </svg>
+                    </div>
+                    Node Js
+                </li>
+
+                <li class="logo-item" role="listitem">
+                    <div class="logo-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" focusable="false">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                                <rect width="16.5" height="16.5" x="3.75" y="3.75" rx="2" />
+                                <path d="M17.25 11.25h-2a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-2m-4.75-6v6m-2-6h4" />
+                            </g>
+                        </svg>
+                    </div>
+                    Typescript
+                </li>
+
+                <li class="logo-item" role="listitem">
+                    <div class="logo-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 24 24" focusable="false">
+                            <path fill="currentColor" d="M19.108 12.376q-.176-.201-.371-.403q.136-.144.264-.287c1.605-1.804 2.283-3.614 1.655-4.701c-.602-1.043-2.393-1.354-4.636-.918q-.331.065-.659.146q-.063-.216-.133-.43C14.467 3.49 13.238 1.999 11.982 2c-1.204 0-2.368 1.397-3.111 3.558q-.11.32-.203.644q-.219-.054-.44-.1c-2.366-.485-4.271-.165-4.898.924c-.601 1.043.027 2.75 1.528 4.472q.224.255.46.5c-.186.19-.361.381-.525.571c-1.465 1.698-2.057 3.376-1.457 4.415c.62 1.074 2.498 1.425 4.785.975q.278-.055.553-.124q.1.351.221.697C9.635 20.649 10.792 22 11.992 22c1.24 0 2.482-1.453 3.235-3.659c.06-.174.115-.355.169-.541q.355.088.715.156c2.203.417 3.952.09 4.551-.95c.619-1.075-.02-2.877-1.554-4.63ZM4.07 7.452c.386-.67 1.943-.932 3.986-.512q.196.04.399.09a20.464 20.464 0 0 0-.422 2.678A20.887 20.887 0 0 0 5.93 11.4q-.219-.227-.427-.465C4.216 9.461 3.708 8.081 4.07 7.452Zm3.887 5.728c-.51-.387-.985-.783-1.416-1.181c.43-.396.905-.79 1.415-1.176q-.028.589-.027 1.179q0 .59.028 1.178Zm0 3.94a7.237 7.237 0 0 1-2.64.094a1.766 1.766 0 0 1-1.241-.657c-.365-.63.111-1.978 1.364-3.43q.236-.273.488-.532a20.49 20.49 0 0 0 2.107 1.7a20.802 20.802 0 0 0 .426 2.712q-.25.063-.505.114Zm7.1-8.039q-.503-.317-1.018-.613q-.508-.292-1.027-.563a18.7 18.7 0 0 1 1.739-.635a18.218 18.218 0 0 1 .306 1.811ZM9.68 5.835c.636-1.85 1.578-2.98 2.304-2.98c.773-.001 1.777 1.218 2.434 3.197q.064.194.12.39a20.478 20.478 0 0 0-2.526.97a20.061 20.061 0 0 0-2.52-.981q.087-.3.188-.596Zm-.4 1.424a18.307 18.307 0 0 1 1.73.642q-1.052.542-2.048 1.181c.08-.638.187-1.249.318-1.823Zm-.317 7.66q.497.319 1.009.613q.522.3 1.057.576a18.196 18.196 0 0 1-1.744.665a19.144 19.144 0 0 1-.322-1.853Zm5.456 3.146a7.236 7.236 0 0 1-1.238 2.333a1.766 1.766 0 0 1-1.188.748c-.729 0-1.658-1.085-2.29-2.896q-.112-.321-.206-.648a20.109 20.109 0 0 0 2.53-1.01a20.8 20.8 0 0 0 2.547.979q-.072.249-.155.494Zm.362-1.324a19.267 19.267 0 0 1-1.762-.646q.509-.267 1.025-.565q.53-.306 1.032-.627a18.152 18.152 0 0 1-.295 1.838Zm.447-4.743q0 .911-.057 1.82c-.493.334-1.013.66-1.554.972c-.54.311-1.073.597-1.597.856q-.827-.396-1.622-.854q-.79-.455-1.544-.969q-.07-.91-.07-1.822q0-.911.068-1.821a24.168 24.168 0 0 1 3.158-1.823q.816.397 1.603.851q.79.454 1.55.959q.065.914.065 1.831Zm.956-5.093c1.922-.373 3.37-.122 3.733.507c.387.67-.167 2.148-1.554 3.706q-.115.129-.238.259a20.061 20.061 0 0 0-2.144-1.688a20.04 20.04 0 0 0-.405-2.649q.31-.076.608-.135Zm-.13 3.885a18.164 18.164 0 0 1 1.462 1.188a18.12 18.12 0 0 1-1.457 1.208q.023-.594.023-1.188q0-.604-.028-1.208Zm3.869 5.789c-.364.631-1.768.894-3.653.538q-.324-.061-.664-.146a20.069 20.069 0 0 0 .387-2.682a19.94 19.94 0 0 0 2.137-1.715q.177.183.336.364a7.234 7.234 0 0 1 1.403 2.238a1.766 1.766 0 0 1 .054 1.403Zm-8.819-6.141a1.786 1.786 0 1 0 2.44.654a1.786 1.786 0 0 0-2.44-.654Z" />
+                        </svg>
+                    </div>
+                    React
+                </li>
+
+                <li class="logo-item" role="listitem">
+                    <div class="logo-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 1024 1023" focusable="false">
+                            <path fill="currentColor" d="M942 767q-24 0-49.5-18T850 702q9 1 14 1q40 0 68-19t28-45q0-25-25-43t-62-21q-41 28-139.5 46T512 639q-159 0-271.5-28.5T128 543q0-30 66-54q14 36 114 61t236 25q113 0 203-18t128-46q12 9 17 18q26-18 50-18q34 0 58 37.5t24 90.5t-24 90.5t-58 37.5zM576 318q0 33 10 59t22 41t22 39.5t10 53.5q-5-3-13.5-8t-31-23.5t-39-39T526 387t-14-69q0-33 31.5-69.5t74.5-62t85-42.5t65-16q-18 0-63.5 31t-87 78t-41.5 81zm-192 33q0 35 16 75t32 63l16 23q-48 0-88-51t-40-110q0-26 20-52.5t48-48t56-40.5t48-37.5t20-32.5q0-28-3-49t-16.5-48T454 0q62 7 92 44.5t30 95.5q0 32-20 57t-48 41t-56 31t-48 35.5t-20 46.5zm128 480q147 0 221-32q35 15 35 32q0 26-75 45t-181 19t-181-19t-75-45q0-17 35-32q74 32 221 32zM192 703q0-17 43-32q93 32 277 32t277-32q43 15 43 32q0 26-94 45t-226.5 19t-226-19t-93.5-45zm-64 128q0 35 51.5 64.5t140 46.5T512 959t192.5-17t140-46.5T896 831q0-11-6-22q134 36 134 86q0 35-68.5 64.5T769 1006t-257 17t-257-17t-186.5-46.5T0 895q0-50 134-86q-6 11-6 22z" />
+                        </svg>
+                    </div>
+                    Java
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="about section" id="sobre" aria-labelledby="about-title">
+        <div class="container">
+            <div class="about-inner">
+
+                <div class="about-image">
+                    <img src="imgs/me.png" alt="Foto de Lucas em ambiente de trabalho">
+                </div>
+
+                <div class="about-content">
+                    <div>
+                        <span class="label">Sobre Mim</span>
+                        <h2 class="section-title" id="about-title">Desenvolvedor em <span style="color:var(--blue)">Formação.</span></h2>
+                    </div>
+
+                    <p class="about-bio">
+                        <strong>Olá!</strong><br><br>
+                        Me chamo <strong>Lucas</strong>, sou estudante de programação com foco profissional <strong>Full Stack</strong>, aplicando meus conhecimentos nas tecnologias mais usadas no mercado, construindo aplicações completas do <strong>back-end</strong> ao <strong>front-end.</strong><br><br>
+                        Atualmente, estou dedicando meus estudos ao desenvolvimento de <strong>APIs</strong>, modelagem de <strong>banco de dados</strong> e criação de <strong>interfaces modernas</strong> e responsivas, sempre aplicando boas práticas de código, organização e versionamento com <strong>Git e Github.</strong><br><br>
+                    </p>
+
+                    <div class="about-cta">
+                        <a href="#" class="btn btn-primary" aria-label="Baixar currículo de Lucas em PDF">Download CV</a>
+                        <a href="https://www.linkedin.com/in/lucas-lbs-dev/" target="_blank" class="btn btn-outline" aria-label="Entrar em contato com Lucas">Vamos Conversar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education section" id="educacao" aria-labelledby="education-title">
+        <div class="container">
+            <div class="education-wrapper">
+                <div class="education-degree">
+
+                    <div class="education-header">
+                        <span class="label">educação</span>
+
+                        <h2 class="section-title" id="education-title">
+                            Formação &amp; Cursos.
+                        </h2>
+
+                        <p class="section-sub">
+                            Minha jornada educacional e os cursos voltados ao desenvolvimento das minhas habilidades em software.
+                        </p>
+                    </div>
+
+                    <article class="degree-card" aria-label="Informações sobre a graduação">
+
+                        <div class="degree-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                        </div>
+
+                        <h3 class="degree-title">
+                            Engenharia de Software
+                        </h3>
+
+                        <p class="degree-university">
+                            -
+                        </p>
+
+                        <div class="degree-meta">
+                            <time datetime="2026">2026 — Presente</time>
+                            <span class="status-badge">cursando</span>
+                        </div>
+
+                        <p class="section-sub">
+                            Graduação em Engenharia de Software com foco em desenvolvimento de sistemas, arquitetura de software, banco de dados e boas práticas de programação. Formação voltada para criar soluções escaláveis, eficientes e alinhadas às demandas do mercado de tecnologia.
+                        </p>
+
+                    </article>
+
+                    <article class="degree-card" aria-label="Informações sobre o curso técnico">
+
+                        <div class="degree-icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                        </div>
+
+                        <h3 class="degree-title">
+                            Técnico em Computação Gráfica
+                        </h3>
+
+                        <p class="degree-university">
+                            Senac
+                        </p>
+
+                        <div class="degree-meta">
+                            <time datetime="2016">2016</time>
+                            <span class="status-badge">concluído</span>
+                        </div>
+
+                        <p class="section-sub">
+                            Curso Técnico em Computação Gráfica com foco em design digital, edição de imagens, criação visual e desenvolvimento de projetos gráficos. Formação voltada para unir criatividade e tecnologia na produção de conteúdos visuais modernos e profissionais.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <div class="education-courses">
+
+                    <div class="courses-div">
+                        <span class="label">Certificados</span>
+                        <h3 class="courses-title">Cursos</h3>
+                    </div>
+
+                    <ul class="courses-list" aria-label="Lista de cursos e certificados">
+
+                        <li>
+                            <article class="course-card">
+                                <div class="course-info">
+                                    <h4 class="course-name">CSS Flexbox</h4>
+                                    <p class="course-platform">Origamid</p>
+                                </div>
+                                <div class="course-meta">
+                                    <span class="course-hours">6h</span>
+                                    <div class="course-meta">
+                                        <a href="certificados/" target="_blank" aria-label="Acessar certificado PDF do curso CSS Flexbox (abre em nova aba)">
+                                            <span class="btn btn-primary">
+                                                Acessar Certificado PDF
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <g fill="none">
+                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.792 21.25h8.416a3.5 3.5 0 0 0 3.5-3.5v-5.53a3.5 3.5 0 0 0-1.024-2.475l-5.969-5.97A3.5 3.5 0 0 0 10.24 2.75H7.792a3.5 3.5 0 0 0-3.5 3.5v11.5a3.5 3.5 0 0 0 3.5 3.5" />
+                                                        <path fill="currentColor" fill-rule="evenodd" d="M10.437 7.141c-.239.078-.392.236-.436.411c-.09.352 0 .73.253 1.203c.126.234.28.471.45.725l.092.137l.145.215l.019-.068l.086-.306q.148-.503.23-1.02c.089-.642-.011-1.018-.309-1.26c-.08-.065-.278-.119-.53-.037m.055 4.152l-.27-.362l-.032-.048c-.115-.19-.243-.38-.382-.585l-.1-.149a10 10 0 0 1-.512-.828c-.31-.578-.558-1.286-.358-2.067c.17-.664.698-1.081 1.227-1.254c.517-.168 1.174-.147 1.66.247c.792.644.848 1.573.739 2.357a9 9 0 0 1-.261 1.174l-.096.34q-.112.382-.208.769l-.067.194l1.392 1.864c.65-.078 1.364-.125 2.03-.077c.769.054 1.595.242 2.158.776a1.56 1.56 0 0 1 .395 1.441c-.117.48-.454.88-.919 1.123c-.985.515-1.902.105-2.583-.416c-.533-.407-1.045-.975-1.476-1.453l-.104-.114c-.37.057-.72.121-1.004.175c-.305.057-.684.128-1.096.22l-.151.443q-.125.288-.238.58l-.122.303a8 8 0 0 1-.427.91c-.33.578-.857 1.192-1.741 1.241c-1.184.066-1.986-.985-1.756-2.108l.006-.027c.2-.791.894-1.31 1.565-1.653c.597-.306 1.294-.532 1.941-.701zm.87 1.165l-.287.843l.421-.08l.004-.001l.38-.07zm2.84 1.604c.274.29.547.56.831.777c.55.42.94.493 1.299.305c.2-.105.284-.241.309-.342a.35.35 0 0 0-.08-.309c-.257-.228-.722-.38-1.392-.428a8 8 0 0 0-.967-.003m-5.005.947c-.318.109-.62.23-.89.368c-.587.3-.87.604-.944.867c-.078.415.192.673.516.655c.27-.015.506-.184.766-.639q.204-.372.358-.767l.107-.266z" clip-rule="evenodd" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="course-card">
+                                <div class="course-info">
+                                    <h4 class="course-name">HTML e CSS para Iniciantes</h4>
+                                    <p class="course-platform">Origamid</p>
+                                </div>
+                                <div class="course-meta">
+                                    <span class="course-hours">46h</span>
+                                    <div class="course-meta">
+                                        <a href="certificados/HTML e CSS para iniciantes - Lucas Balbino da Silva.pdf" target="_blank" aria-label="Acessar certificado PDF do curso HTML e CSS para Iniciantes (abre em nova aba)">
+                                            <span class="btn btn-primary">
+                                                Acessar Certificado PDF
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" aria-hidden="true">
+                                                    <g fill="none">
+                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.792 21.25h8.416a3.5 3.5 0 0 0 3.5-3.5v-5.53a3.5 3.5 0 0 0-1.024-2.475l-5.969-5.97A3.5 3.5 0 0 0 10.24 2.75H7.792a3.5 3.5 0 0 0-3.5 3.5v11.5a3.5 3.5 0 0 0 3.5 3.5" />
+                                                        <path fill="currentColor" fill-rule="evenodd" d="M10.437 7.141c-.239.078-.392.236-.436.411c-.09.352 0 .73.253 1.203c.126.234.28.471.45.725l.092.137l.145.215l.019-.068l.086-.306q.148-.503.23-1.02c.089-.642-.011-1.018-.309-1.26c-.08-.065-.278-.119-.53-.037m.055 4.152l-.27-.362l-.032-.048c-.115-.19-.243-.38-.382-.585l-.1-.149a10 10 0 0 1-.512-.828c-.31-.578-.558-1.286-.358-2.067c.17-.664.698-1.081 1.227-1.254c.517-.168 1.174-.147 1.66.247c.792.644.848 1.573.739 2.357a9 9 0 0 1-.261 1.174l-.096.34q-.112.382-.208.769l-.067.194l1.392 1.864c.65-.078 1.364-.125 2.03-.077c.769.054 1.595.242 2.158.776a1.56 1.56 0 0 1 .395 1.441c-.117.48-.454.88-.919 1.123c-.985.515-1.902.105-2.583-.416c-.533-.407-1.045-.975-1.476-1.453l-.104-.114c-.37.057-.72.121-1.004.175c-.305.057-.684.128-1.096.22l-.151.443q-.125.288-.238.58l-.122.303a8 8 0 0 1-.427.91c-.33.578-.857 1.192-1.741 1.241c-1.184.066-1.986-.985-1.756-2.108l.006-.027c.2-.791.894-1.31 1.565-1.653c.597-.306 1.294-.532 1.941-.701zm.87 1.165l-.287.843l.421-.08l.004-.001l.38-.07zm2.84 1.604c.274.29.547.56.831.777c.55.42.94.493 1.299.305c.2-.105.284-.241.309-.342a.35.35 0 0 0-.08-.309c-.257-.228-.722-.38-1.392-.428a8 8 0 0 0-.967-.003m-5.005.947c-.318.109-.62.23-.89.368c-.587.3-.87.604-.944.867c-.078.415.192.673.516.655c.27-.015.506-.184.766-.639q.204-.372.358-.767l.107-.266z" clip-rule="evenodd" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article class="course-card">
+                                <div class="course-info">
+                                    <h4 class="course-name">JavaScript Completo ES6</h4>
+                                    <p class="course-platform">Origamid</p>
+                                </div>
+                                <div class="course-meta">
+                                    <span class="course-hours">37h</span>
+                                    <div class="course-meta">
+                                        <a href="#" aria-label="Curso JavaScript Completo ES6 em andamento, certificado ainda não disponível">
+                                            <span class="btn btn-primary">
+                                                Em andamento
+                                                <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" aria-hidden="true">
+                                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                                        <circle cx="7" cy="7" r="1.5" />
+                                                        <circle cx="12.25" cy="7" r="1.25" />
+                                                        <circle cx="1.75" cy="7" r="1.25" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </article>
+                        </li>
+
+                    </ul>
+                    <a class="btn btn-outline" href="projects-studies.html">Acessar Todos os Projetos e Estudos</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="process section" aria-labelledby="process-title">
+        <div class="container">
+
+            <div class="process-head">
+                <span class="label">Transformando ideias em soluções através do código.</span>
+                <h2 class="section-title" id="process-title">Soluções bem feitas começam com fundamentos simples.</h2>
+                <p style="color:var(--gray);font-size:14px;">Os conteúdos abaixo representam os principais focos da minha jornada de aprendizado.</p>
+            </div>
+
+            <ol class="steps-row" aria-label="Principais focos de aprendizado">
+
+                <li class="step">
+                    <div class="step-num" aria-hidden="true">01</div>
+                    <div class="step-dot" aria-hidden="true"></div>
+                    <h4>Back-end & APIs</h4>
+                    <p>Desenvolvimento de aplicações server-side e APIs REST, com organização de código, integração de dados e boas práticas de arquitetura.</p>
+                </li>
+
+                <li class="step">
+                    <div class="step-num" aria-hidden="true">02</div>
+                    <div class="step-dot" aria-hidden="true"></div>
+                    <h4>Desenvolvimento Web</h4>
+                    <p>Criação de interfaces modernas e responsivas utilizando HTML, CSS e JavaScript, com foco em performance e experiência do usuário.</p>
+                </li>
+
+                <li class="step">
+                    <div class="step-num" aria-hidden="true">03</div>
+                    <div class="step-dot" aria-hidden="true"></div>
+                    <h4>Lógica de Programação</h4>
+                    <p>Resolução de problemas utilizando algoritmos e estruturas de dados, com foco em eficiência, clareza e escalabilidade.</p>
+                </li>
+
+                <li class="step">
+                    <div class="step-num" aria-hidden="true">04</div>
+                    <div class="step-dot" aria-hidden="true"></div>
+                    <h4>Projetos Práticos</h4>
+                    <p>Desenvolvimento de projetos reais para aplicar conhecimentos, evoluir habilidades técnicas e construir um portfólio sólido.</p>
+                </li>
+
+            </ol>
+        </div>
+    </section>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+
+                <a href="#" class="logo" style="font-size:16px;" aria-label="Lucas B Silva - Engenheiro de Software, ir para o início">
+                    Lucas B<span aria-hidden="true">—</span>Software Engineer
+                </a>
+
+                <nav aria-label="Links do rodapé">
+                    <div class="footer-links">
+                        <a href="#hero">Início</a>
+                        <a href="#sobre">Sobre</a>
+                        <a href="#educacao">Formação</a>
+                        <a href="projects-studies.html">Projetos</a>
+                    </div>
+                </nav>
+
+                <p class="footer-copy"><small>&copy; 2026 Lucas B. da Silva. Todos os direitos reservados.</small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/animation-scroll.js"></script>
+
+</body>
+
+</html>
