@@ -48,7 +48,18 @@ span::selection {
 *,
 *::before,
 *::after {
+  -webkit-tap-highlight: transparent;
+}
+
+a,
+span,
+button,
+ul,
+ol,
+svg button,
+label {
   -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 html {
