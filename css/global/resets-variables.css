@@ -45,7 +45,9 @@ span::selection {
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-* {
+*,
+*::before,
+*::after {
   -webkit-tap-highlight-color: transparent;
 }
 
