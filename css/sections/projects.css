@@ -125,6 +125,7 @@
   background: #7ad7ff;
   animation: blink 1.5s ease infinite;
 }
+
 @keyframes blink {
   0%,
   100% {
