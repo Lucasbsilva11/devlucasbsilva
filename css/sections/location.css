@@ -150,7 +150,6 @@
       color: rgba(255,255,255,0.88);
     }
  
-    /* ── MOBILE ── */
     @media (max-width: 768px) {
       .location {
         padding: 60px 0 0;
