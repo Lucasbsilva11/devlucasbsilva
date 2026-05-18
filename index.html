@@ -28,9 +28,10 @@
             </label>
 
             <nav id="main-nav" aria-label="Navegação principal">
-                <a class="nav-link" href="#">Início</a>
+                <a class="nav-link" href="">Início</a>
                 <a class="nav-link" href="#sobre">Sobre</a>
                 <a class="nav-link" href="#educacao">Formação</a>
+                <a class="nav-link" href="#localidade">Localização</a>
 
                 <div class="nav-dropdown" role="navigation" aria-label="Menu de navegação adicional">
                     <a class="nav-link" href="#!" aria-haspopup="true" aria-expanded="false">Ver Mais</a>
@@ -196,7 +197,7 @@
             <div class="about-inner">
 
                 <div class="about-image">
-                    <img src="imgs/Futuristic Robotic Face (1).png" alt="Imagem futurista flutuando">
+                    <img src="imgs/personagem-dev.png" alt="Imagem do desenvolvedor">
                 </div>
 
                 <div class="about-content">
@@ -215,6 +216,53 @@
                         <a href="https://www.linkedin.com/in/lucas-lbs-dev/" target="_blank" class="btn btn-outline" aria-label="Entrar em contato com Lucas">Vamos Conversar</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location section" id="localidade" aria-labelledby="location-title">
+        <div class="container">
+            <div class="location-header">
+                <span class="label">Localidade</span>
+                <h2 class="section-title" id="location-title">
+                    Onde estou <span style="color:var(--blue)">no mundo.</span>
+                </h2>
+            </div>
+        </div>
+
+        <!-- Mapa + popup card -->
+        <div class="location-map-wrap">
+
+            <!-- Desktop: landscape -->
+            <img class="map-img-desktop" src="imgs/location-desktop.png" alt="Mapa de São Paulo" loading="lazy" decoding="async">
+
+            <!-- Mobile: portrait -->
+            <img class="map-img-mobile" src="imgs/location-mobile.png" alt="Mapa de São Paulo" loading="lazy" decoding="async">
+
+            <!-- Popup card (desktop: flutuando sobre o mapa / mobile: abaixo) -->
+            <div class="location-card" role="region" aria-label="Informações de localidade">
+
+                <div class="loc-badge">
+                    <span class="loc-dot" aria-label="Online"></span>
+                    São Paulo, Brasil
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                </div>
+
+                <h3 class="loc-title">São Paulo<br><span style="color:var(--primary)">Brasil</span></h3>
+
+                <div class="loc-divider" aria-hidden="true"></div>
+
+                <p class="loc-bio">
+                    Natural do Brasil, nascido em <strong>São Paulo/SP.</strong>
+                    Desenvolvedor apaixonado por tecnologia, design e experiências digitais,
+                    com foco na criação de projetos modernos que unem
+                    <strong>performance, estética e inovação.</strong>
+                    Sempre em busca de evolução constante, transformando ideias em
+                    soluções criativas e funcionais.
+                </p>
             </div>
         </div>
     </section>
@@ -451,6 +499,7 @@
                         <a href="#hero">Início</a>
                         <a href="#sobre">Sobre</a>
                         <a href="#educacao">Formação</a>
+                        <a href="#localidade">Localização</a>
                         <a href="projects-studies.html">Projetos</a>
                     </div>
                 </nav>

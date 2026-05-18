@@ -1,0 +1,205 @@
+.location {
+      padding: 80px 0 0;
+    }
+ 
+    .location > .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+ 
+    /* Header acima do mapa */
+    .location-header {
+      margin-bottom: 40px;
+    }
+ 
+    .location-header .label {
+      display: block;
+      margin-bottom: 8px;
+    }
+ 
+    .location-header .section-title {
+      margin-bottom: 0;
+    }
+ 
+    /* ── DESKTOP: mapa como fundo + popup card ── */
+    .location-map-wrap {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+ 
+    /* Mapa landscape (desktop) */
+    .location-map-wrap .map-img-desktop {
+      display: block;
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: center top;
+    }
+ 
+    /* Mapa portrait (mobile) — oculto no desktop */
+    .location-map-wrap .map-img-mobile {
+      display: none;
+    }
+ 
+    /* Overlay escuro sutil para o card respirar */
+    .location-map-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(0,0,0,0.38) 0%,
+        rgba(0,0,0,0.05) 60%
+      );
+      pointer-events: none;
+    }
+ 
+    /* ── POPUP CARD ── */
+    .location-card {
+      position: absolute;
+      left: 55%;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      background: rgba(15, 20, 35, 0.55);
+      backdrop-filter: blur(22px) saturate(160%);
+      -webkit-backdrop-filter: blur(22px) saturate(160%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      padding: 28px 28px 24px;
+      width: 310px;
+      box-shadow:
+        0 8px 40px rgba(0, 0, 0, 0.5),
+        0 1px 0 rgba(255,255,255,0.08) inset;
+      line-height: normal;
+      animation: loc-float 4s ease-in-out infinite;
+    }
+ 
+    @keyframes loc-float {
+      0%, 100% { transform: translateY(-50%); }
+      50%       { transform: translateY(calc(-50% - 7px)); }
+    }
+ 
+    /* Badge topo do card */
+    .location-card .loc-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px;
+      padding: 4px 12px 4px 8px;
+      font-size: 11px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 16px;
+      letter-spacing: 0.02em;
+    }
+ 
+    /* Dot animado de "online" */
+    .loc-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--primary);
+      flex-shrink: 0;
+      animation: loc-pulse 2s ease-in-out infinite;
+    }
+ 
+    @keyframes loc-pulse {
+      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(74,222,128,.5); }
+      50%       { opacity: .85; box-shadow: 0 0 0 5px rgba(74,222,128,0); }
+    }
+ 
+    .location-card .loc-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+      margin: 0 0 4px;
+      line-height: 1.25;
+    }
+ 
+    .location-card .loc-title span {
+      color: var(--blue, #4f8ef7);
+    }
+ 
+    .location-card .loc-coords {
+      font-size: 11px;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.05em;
+      margin-bottom: 18px;
+    }
+ 
+    .location-card .loc-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.08);
+      margin-bottom: 18px;
+    }
+ 
+    .location-card .loc-bio {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.75;
+      margin: 0;
+    }
+ 
+    .location-card .loc-bio strong {
+      color: rgba(255,255,255,0.88);
+    }
+ 
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      .location {
+        padding: 60px 0 0;
+      }
+ 
+      /* No mobile o mapa portrait aparece, desktop some */
+      .location-map-wrap .map-img-desktop {
+        display: none;
+      }
+ 
+      .location-map-wrap .map-img-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .location-card .loc-badge {
+        display: none;
+      }
+
+      .location-card .loc-title{
+        display: none;
+      }
+
+      .location-card .loc-divider{
+        display: none;
+      }
+ 
+      /* Card permanece flutuando — reposiciona para o centro */
+      .location-card {
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 48px);
+        max-width: 300px;
+        animation: loc-float-mobile 4s ease-in-out infinite;
+      }
+ 
+      @keyframes loc-float-mobile {
+        0%, 100% { transform: translate(-50%, -50%); }
+        50%       { transform: translate(-50%, calc(-50% - 7px)); }
+      }
+ 
+      .location-map-wrap::after {
+        background: linear-gradient(
+          to bottom,
+          rgba(0,0,0,0.1) 0%,
+          rgba(0,0,0,0.45) 100%
+        );
+      }
+    }
