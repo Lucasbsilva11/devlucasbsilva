@@ -82,7 +82,6 @@
 .logo-icon svg {
   max-width: 16px;
   max-height: 16px;
-  flex-shrink: 0;
 }
 
 .logo-name {
@@ -130,40 +129,5 @@
     padding-bottom: 4px;
     padding-left: 16px;
     padding-right: 45px;
-  }
-
-  .logo-item {
-    min-width: 110px;
-    max-width: 110px;
-
-    padding: 1rem 0.9rem 0.85rem;
-
-    flex: 0 0 auto;
-  }
-
-  .marquee-fade {
-    display: block;
-
-    position: absolute;
-
-    top: 0;
-    bottom: 0;
-
-    width: 40px;
-
-    pointer-events: none;
-    z-index: 2;
-  }
-
-  .marquee-fade-left {
-    left: 0;
-
-    background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
-  }
-
-  .marquee-fade-right {
-    right: 0;
-
-    background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
   }
 }
