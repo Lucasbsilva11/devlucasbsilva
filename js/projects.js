@@ -1,5 +1,3 @@
-// js/filter.js
-
 export function initProject() {
   const btns = document.querySelectorAll(".filter-btn");
   const cartoes = document.querySelectorAll("#projects-grid article");

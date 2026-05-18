@@ -27,9 +27,6 @@ export function initScrolReveal() {
   // TESTIMONIALS
   sr.reveal(".test-card", { interval: 200 });
 
-  // LOGOS
-  sr.reveal(".logo-item", { interval: 100 });
-
   // ScrollReveal - projects
   sr.reveal(".page-hero-inner", { interval: 200 });
 
