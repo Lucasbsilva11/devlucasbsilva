@@ -54,3 +54,24 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  animation: floating 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(0, 123, 255, 0.35));
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

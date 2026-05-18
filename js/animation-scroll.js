@@ -11,8 +11,12 @@ export function initScrolReveal() {
   sr.reveal(".hero-text");
   sr.reveal(".hero-image", { origin: "bottom" });
 
+  // STACK
+  sr.reveal(".logos-strip", { origin: "bottom" });
+  sr.reveal(".marquee-outer");
+
   // ABOUT
-  sr.reveal(".about-image", { origin: "left" });
+  sr.reveal(".about-image", { origin: "bottom" });
   sr.reveal(".about-content");
 
   // CARDS
