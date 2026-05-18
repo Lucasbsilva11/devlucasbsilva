@@ -1,6 +1,3 @@
-/* ══════════════════════════════════════
-   BREAKPOINT — 800px
-══════════════════════════════════════ */
 @media (max-width: 800px) {
   /* Dropdown */
   .dropdown-menu {
@@ -29,9 +26,6 @@
   }
 }
 
-/* ══════════════════════════════════════
-   BREAKPOINT — 750px
-══════════════════════════════════════ */
 @media (max-width: 750px) {
   /* Header */
   .header-inner {
@@ -44,7 +38,7 @@
     display: none;
   }
 
-  /* Menu hamburguer */
+  /* Menu hambúrguer */
   .menu-btn {
     display: flex;
   }

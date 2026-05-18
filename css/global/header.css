@@ -74,7 +74,7 @@ nav {
   position: absolute;
   left: 0;
   min-width: 160px;
-  background: rgba(0, 0, 0, 0.886);
+  background: rgba(0, 0, 0, 0.532);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-sm);
   padding: 0.5rem;
@@ -123,3 +123,4 @@ nav {
   border-radius: 2px;
   transition: 0.3s;
 }
+
