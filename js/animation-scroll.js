@@ -4,7 +4,7 @@ export function initScrolReveal() {
     distance: "40px",
     duration: 400,
     easing: "ease",
-    reset: true,
+    reset: false,
   });
 
   // ── HERO ──────────────────────────────────────────
@@ -70,7 +70,7 @@ export function initScrolReveal() {
   });
 
   sr.reveal(".location-card", {
-    delay: 880,
+    delay: 580,
     distance: "30px",
     duration: 900,
   });
@@ -93,13 +93,18 @@ export function initScrolReveal() {
     interval: 180, // cada card entra em sequência
   });
 
+  // sr.reveal(".courses-div", {
+  //   delay: 100,
+  //   origin: "right",
+  //   distance: "50px",
+  // });
 
-  sr.reveal(".course-card", {
-    delay: 200,
-    interval: 150,
-    origin: "bottom",
-    distance: "40px",
-  });
+  // sr.reveal(".course-card", {
+  //   delay: 200,
+  //   interval: 150,
+  //   origin: "right",
+  //   distance: "40px",
+  // });
 
   sr.reveal(".education-courses .btn-outline", {
     delay: 150,
