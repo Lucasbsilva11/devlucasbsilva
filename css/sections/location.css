@@ -64,7 +64,7 @@
       top: 50%;
       transform: translateY(-50%);
       z-index: 2;
-      background: rgba(15, 20, 35, 0.55);
+      background: rgba(15, 20, 35, 0.158);
       backdrop-filter: blur(22px) saturate(160%);
       -webkit-backdrop-filter: blur(22px) saturate(160%);
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -182,7 +182,7 @@
       /* Card permanece flutuando — reposiciona para o centro */
       .location-card {
         left: 50%;
-        top: 40%;
+        top: 250px;
         transform: translate(-50%, -50%);
         width: calc(100% - 48px);
         max-width: 300px;
